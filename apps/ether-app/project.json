@@ -5,5 +5,15 @@
   "projectType": "application",
   "tags": [],
   "// targets": "to see all targets run: nx show project ether-app --web",
-  "targets": {}
+  "targets": {
+    "lint": {
+      "executor": "@nx/eslint:lint",
+      "options": {
+        "lintFilePatterns": [
+          "apps/ether-app/src/**/*.ts",
+          "apps/ether-app/src/**/*.tsx"
+        ]
+      }
+    }
+  }
 }
