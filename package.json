@@ -6,6 +6,7 @@
     "serve:ether-app": "nx run ether-app:serve",
     "lint:ether-app": "nx lint ether-app",
     "test:ether-app": "nx test ether-app --coverage",
+    "test:ether-app:dev": "nx test ether-app --watch",
     "format": "prettier --write ."
   },
   "private": true,
