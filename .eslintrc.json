@@ -14,7 +14,8 @@
     "jsx-a11y",
     "import",
     "react-hooks",
-    "prettier"
+    "prettier",
+    "jest"
   ],
   "extends": [
     "eslint:recommended",
@@ -27,6 +28,7 @@
     "plugin:react-hooks/recommended",
     "airbnb",
     "airbnb/hooks",
+    "plugin:jest/recommended",
     "plugin:prettier/recommended"
   ],
   "settings": {
@@ -36,12 +38,18 @@
   },
   "env": {
     "browser": true,
-    "es2021": true
+    "es2021": true,
+    "jest/globals": true
   },
   "rules": {
     "prettier/prettier": "error",
     "@typescript-eslint/no-array-constructor": "error",
     "react/jsx-filename-extension": [1, { "extensions": [".jsx", ".tsx"] }],
-    "react/react-in-jsx-scope": "off"
+    "react/react-in-jsx-scope": "off",
+    "jest/no-disabled-tests": "warn",
+    "jest/no-focused-tests": "error",
+    "jest/no-identical-title": "error",
+    "jest/prefer-to-have-length": "warn",
+    "jest/valid-expect": "error"
   }
 }
