@@ -6,6 +6,9 @@ import { App } from './app/app.tsx';
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
+
+console.log('Hello');
+
 root.render(
   <StrictMode>
     <App />
