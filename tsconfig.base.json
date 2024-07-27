@@ -8,13 +8,26 @@
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
     "importHelpers": true,
-    "target": "es2015",
+    "target": "es2020",
     "module": "esnext",
-    "lib": ["es2020", "dom"],
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "jsx": "react-jsx",
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
+    "strict": true,
+    "esModuleInterop": true,
     "baseUrl": ".",
+    "forceConsistentCasingInFileNames": true,
+    "allowJs": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "jsxImportSource": "react",
+    "allowImportingTsExtensions": true,
     "paths": {
+      "@ether-frontend/dynamic-theme": [
+        "libs/shared/features/dynamic-theme/src/index.ts"
+      ],
       "@ether/styles": ["libs/shared/styles/src/index.ts"]
     }
   },
