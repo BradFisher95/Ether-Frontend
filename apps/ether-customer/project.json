@@ -1,17 +1,17 @@
 {
-  "name": "ether-app",
+  "name": "ether-customer",
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
-  "sourceRoot": "apps/ether-app/src",
+  "sourceRoot": "apps/ether-customer/src",
   "projectType": "application",
   "tags": [],
-  "// targets": "to see all targets run: nx show project ether-app --web",
+  "// targets": "to see all targets run: nx show project ether-admin --web",
   "targets": {
     "lint": {
       "executor": "@nx/eslint:lint",
       "options": {
         "lintFilePatterns": [
-          "apps/ether-app/src/**/*.ts",
-          "apps/ether-app/src/**/*.tsx"
+          "apps/ether-customer/src/**/*.ts",
+          "apps/ether-customer/src/**/*.tsx"
         ]
       }
     }

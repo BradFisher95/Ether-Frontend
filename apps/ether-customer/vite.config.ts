@@ -5,15 +5,15 @@ import { nxViteTsPaths } from '@nx/vite/plugins/nx-tsconfig-paths.plugin';
 
 export default defineConfig({
   root: __dirname,
-  cacheDir: '../../node_modules/.vite/apps/ether-app',
+  cacheDir: '../../node_modules/.vite/apps/ether-customer',
 
   server: {
-    port: 4200,
+    port: 4201,
     host: 'localhost',
   },
 
   preview: {
-    port: 4300,
+    port: 4301,
     host: 'localhost',
   },
 
@@ -25,7 +25,7 @@ export default defineConfig({
   // },
 
   build: {
-    outDir: '../../dist/apps/ether-app',
+    outDir: '../../dist/apps/ether-customer',
     emptyOutDir: true,
     reportCompressedSize: true,
     commonjsOptions: {

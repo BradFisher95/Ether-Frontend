@@ -1,0 +1,6 @@
+{
+  "extends": ["../../.eslintrc.json"],
+  "rules": {
+    // Project-specific rules can go here
+  }
+}
