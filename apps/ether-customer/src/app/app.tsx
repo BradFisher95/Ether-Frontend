@@ -1,4 +1,5 @@
 import React from 'react';
+import '@ether/styles';
 
 export function App() {
   return (
