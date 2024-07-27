@@ -25,7 +25,7 @@
     "jsxImportSource": "react",
     "allowImportingTsExtensions": true,
     "paths": {
-      "@ether-frontend/dynamic-theme": [
+      "@ether/dynamic-theme": [
         "libs/shared/features/dynamic-theme/src/index.ts"
       ],
       "@ether/styles": ["libs/shared/styles/src/index.ts"]

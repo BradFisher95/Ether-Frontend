@@ -1,1 +1,1 @@
-export * from './lib/dynamic-theme';
+export * from './lib/slices/themeSlice.ts';
