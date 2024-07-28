@@ -1,6 +1,6 @@
 import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react';
 
-interface Theme {
+export interface Theme {
   backgroundColor: string;
   panelColor: string;
   borderColor: string;

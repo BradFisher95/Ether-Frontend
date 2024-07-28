@@ -87,4 +87,9 @@ body {
   background-color: var(--background-color);
   color: var(--font-color);
   font-family: 'Outfit', sans-serif;
+  transition: 0.2s;
+
+  > * {
+    transition: 0.2s;
+  }
 }

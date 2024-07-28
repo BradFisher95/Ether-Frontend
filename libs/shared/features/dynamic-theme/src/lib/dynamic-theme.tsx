@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
-import { useFetchThemeQuery } from './slices/themeSlice';
+import { useFetchThemeQuery, Theme } from './slices/themeSlice';
+import { camelToKebab } from '@ether/core';
 
 export function DynamicTheme() {
   const [theme, setTheme] = useState('dark');
@@ -7,13 +8,20 @@ export function DynamicTheme() {
 
   useEffect(() => {
     if (data) {
-      const root = document.querySelector(':root') as any;
-      root.style.setProperty('--background-color', data.backgroundColor);
+      mapToCssVars(data);
     }
   });
 
   const updateTheme = () => {
     theme === 'dark' ? setTheme('light') : setTheme('dark');
+  };
+
+  const mapToCssVars = (theme: Theme) => {
+    for (const styleKey in theme) {
+      const snakeKey = `--${camelToKebab(styleKey)}`;
+      const root = document.documentElement;
+      root.style.setProperty(snakeKey, data[styleKey]);
+    }
   };
 
   return (
