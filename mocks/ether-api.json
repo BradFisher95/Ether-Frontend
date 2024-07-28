@@ -1,0 +1,173 @@
+{
+  "uuid": "c4d07872-70ca-4c4b-82e8-c366cb01216a",
+  "lastMigration": 32,
+  "name": "Ether API",
+  "endpointPrefix": "",
+  "latency": 0,
+  "port": 1000,
+  "hostname": "",
+  "folders": [],
+  "routes": [
+    {
+      "uuid": "11f0b619-a602-471f-99db-b648ba20cf7e",
+      "type": "http",
+      "documentation": "A endpoint for returning a theme configuration",
+      "method": "get",
+      "endpoint": "theme",
+      "responses": [
+        {
+          "uuid": "2e028733-fb17-48a5-b8ae-daa5beb136e7",
+          "body": "{\n  \"backgroundColor\": \"#3f4054\",\n  \"panelColor\": \"#2b2c3b\",\n  \"borderColor\": \"#3f4054\",\n  \"fontColor\": \"#ffffff\",\n  \"primaryColor\": \"#2b2c3b\",\n  \"primaryHoverColor\": \"#585efb\",\n  \"accentColor\": \"#0fcf90\",\n  \"errorColor\": \"#af1a1a\",\n  \"placeholderText\": \"#767676\",\n  \"disabledColor\": \"#e5e5e5\"\n}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "Dark Theme",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [
+            {
+              "target": "query",
+              "modifier": "theme",
+              "value": "dark",
+              "invert": false,
+              "operator": "equals"
+            }
+          ],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true,
+          "crudKey": "id",
+          "callbacks": []
+        },
+        {
+          "uuid": "96f29fea-1073-4031-87b0-be2d18e0c1c1",
+          "body": "{\n  \"backgroundColor\": \"#EDEEEF\",\n  \"panelColor\": \"#2b2c3b\",\n  \"borderColor\": \"#3f4054\",\n  \"fontColor\": \"#333333\",\n  \"primaryColor\": \"#2b2c3b\",\n  \"primaryHoverColor\": \"#585efb\",\n  \"accentColor\": \"#0fcf90\",\n  \"errorColor\": \"#af1a1a\",\n  \"placeholderText\": \"#767676\",\n  \"disabledColor\": \"#e5e5e5\"\n}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "Light Theme",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [
+            {
+              "target": "query",
+              "modifier": "theme",
+              "value": "light",
+              "invert": false,
+              "operator": "equals"
+            }
+          ],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": false,
+          "crudKey": "id",
+          "callbacks": []
+        },
+        {
+          "uuid": "9518f1a4-3498-46dc-aee4-8165ff2fa3f6",
+          "body": "{\n  \"backgroundColor\": \"#0FCF90\",\n  \"panelColor\": \"#2b2c3b\",\n  \"borderColor\": \"#3f4054\",\n  \"fontColor\": \"#ffffff\",\n  \"primaryColor\": \"#2b2c3b\",\n  \"primaryHoverColor\": \"#585efb\",\n  \"accentColor\": \"#0fcf90\",\n  \"errorColor\": \"#af1a1a\",\n  \"placeholderText\": \"#767676\",\n  \"disabledColor\": \"#e5e5e5\"\n}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "Crazy Theme",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [
+            {
+              "target": "query",
+              "modifier": "theme",
+              "value": "crazy",
+              "invert": false,
+              "operator": "equals"
+            }
+          ],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": false,
+          "crudKey": "id",
+          "callbacks": []
+        },
+        {
+          "uuid": "89e482db-abbb-4703-a92a-268996863c3d",
+          "body": "{\n  \"message\": \"Theme not found\"\n}",
+          "latency": 0,
+          "statusCode": 404,
+          "label": "Error ",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": false,
+          "crudKey": "id",
+          "callbacks": []
+        }
+      ],
+      "responseMode": null
+    }
+  ],
+  "rootChildren": [
+    {
+      "type": "route",
+      "uuid": "11f0b619-a602-471f-99db-b648ba20cf7e"
+    }
+  ],
+  "proxyMode": false,
+  "proxyHost": "",
+  "proxyRemovePrefix": false,
+  "tlsOptions": {
+    "enabled": false,
+    "type": "CERT",
+    "pfxPath": "",
+    "certPath": "",
+    "keyPath": "",
+    "caPath": "",
+    "passphrase": ""
+  },
+  "cors": true,
+  "headers": [
+    {
+      "key": "Content-Type",
+      "value": "application/json"
+    },
+    {
+      "key": "Access-Control-Allow-Origin",
+      "value": "*"
+    },
+    {
+      "key": "Access-Control-Allow-Methods",
+      "value": "GET,POST,PUT,PATCH,DELETE,HEAD,OPTIONS"
+    },
+    {
+      "key": "Access-Control-Allow-Headers",
+      "value": "Content-Type, Origin, Accept, Authorization, Content-Length, X-Requested-With"
+    }
+  ],
+  "proxyReqHeaders": [
+    {
+      "key": "",
+      "value": ""
+    }
+  ],
+  "proxyResHeaders": [
+    {
+      "key": "",
+      "value": ""
+    }
+  ],
+  "data": [],
+  "callbacks": []
+}

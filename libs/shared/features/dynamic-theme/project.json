@@ -1,0 +1,9 @@
+{
+  "name": "dynamic-theme",
+  "$schema": "../../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/shared/features/dynamic-theme/src",
+  "projectType": "library",
+  "tags": [],
+  "// targets": "to see all targets run: nx show project dynamic-theme --web",
+  "targets": {}
+}

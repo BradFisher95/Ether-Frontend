@@ -1,10 +1,11 @@
-import React from 'react';
 import '@ether/styles';
+import { DynamicTheme } from '@ether/dynamic-theme';
 
 export function App() {
   return (
     <div>
-      <p>Ether Customer</p>
+      <h1>Customer</h1>
+      <DynamicTheme></DynamicTheme>
     </div>
   );
 }
