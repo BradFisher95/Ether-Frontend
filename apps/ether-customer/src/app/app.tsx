@@ -1,11 +1,12 @@
+import { useDynamicTheme } from '@ether/dynamic-theme';
 import '@ether/styles';
-import { DynamicTheme } from '@ether/dynamic-theme';
 
 export function App() {
+  useDynamicTheme();
+
   return (
     <div>
       <h1>Customer</h1>
-      <DynamicTheme></DynamicTheme>
     </div>
   );
 }

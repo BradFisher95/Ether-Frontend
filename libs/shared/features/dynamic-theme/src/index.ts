@@ -1,2 +1,2 @@
 export * from './lib/slices/themeSlice';
-export * from './lib/dynamic-theme';
+export * from './lib/hooks/useDynamicTheme';
