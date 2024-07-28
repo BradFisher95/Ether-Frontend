@@ -1,6 +1,6 @@
 import { render } from '@testing-library/react';
 
-import { DynamicTheme } from './dynamic-theme.tsx';
+import { DynamicTheme } from './dynamic-theme';
 
 describe('DynamicTheme', () => {
   it('should render successfully', () => {

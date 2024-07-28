@@ -1,1 +1,1 @@
-export * from './lib/slices/themeSlice.ts';
+export * from './lib/slices/themeSlice';

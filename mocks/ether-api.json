@@ -17,7 +17,7 @@
       "responses": [
         {
           "uuid": "2e028733-fb17-48a5-b8ae-daa5beb136e7",
-          "body": "{\n  \"background-color\": \"#3f4054\",\n  \"panel-color\": \"#2b2c3b\",\n  \"border-color\": \"#3f4054\",\n  \"font-color\": \"#ffffff\",\n  \"primary-color\": \"#2b2c3b\",\n  \"primary-hover-color\": \"#585efb\",\n  \"accent-color\": \"#0fcf90\",\n  \"error-color\": \"#af1a1a\",\n  \"placeholder-text\": \"#767676\",\n  \"disabled-color\": \"#e5e5e5\"\n}",
+          "body": "{\n  \"backgroundColor\": \"#3f4054\",\n  \"panelColor\": \"#2b2c3b\",\n  \"borderColor\": \"#3f4054\",\n  \"fontColor\": \"#ffffff\",\n  \"primaryColor\": \"#2b2c3b\",\n  \"primaryHoverColor\": \"#585efb\",\n  \"accentColor\": \"#0fcf90\",\n  \"errorColor\": \"#af1a1a\",\n  \"placeholderText\": \"#767676\",\n  \"disabledColor\": \"#e5e5e5\"\n}",
           "latency": 0,
           "statusCode": 200,
           "label": "Dark Theme",
@@ -26,7 +26,15 @@
           "filePath": "",
           "databucketID": "",
           "sendFileAsBody": false,
-          "rules": [],
+          "rules": [
+            {
+              "target": "query",
+              "modifier": "theme",
+              "value": "dark",
+              "invert": false,
+              "operator": "equals"
+            }
+          ],
           "rulesOperator": "OR",
           "disableTemplating": false,
           "fallbackTo404": false,
@@ -36,7 +44,7 @@
         },
         {
           "uuid": "96f29fea-1073-4031-87b0-be2d18e0c1c1",
-          "body": "{\n  \"background-color\": \"#EDEEEF\",\n  \"panel-color\": \"#FFFFFF \",\n  \"border-color\": \"#EDEEEF\",\n  \"font-color\": \"#333333\",\n  \"primary-color\": \"#2b2c3b\",\n  \"primary-hover-color\": \"#585efb\",\n  \"accent-color\": \"#0fcf90\",\n  \"error-color\": \"#af1a1a\",\n  \"placeholder-text\": \"#767676\",\n  \"disabled-color\": \"#e5e5e5\"\n}",
+          "body": "{\n  \"backgroundColor\": \"#EDEEEF\",\n  \"panelColor\": \"#2b2c3b\",\n  \"borderColor\": \"#3f4054\",\n  \"fontColor\": \"#ffffff\",\n  \"primaryColor\": \"#2b2c3b\",\n  \"primaryHoverColor\": \"#585efb\",\n  \"accentColor\": \"#0fcf90\",\n  \"errorColor\": \"#af1a1a\",\n  \"placeholderText\": \"#767676\",\n  \"disabledColor\": \"#e5e5e5\"\n}",
           "latency": 0,
           "statusCode": 200,
           "label": "Light Theme",
@@ -45,7 +53,15 @@
           "filePath": "",
           "databucketID": "",
           "sendFileAsBody": false,
-          "rules": [],
+          "rules": [
+            {
+              "target": "query",
+              "modifier": "theme",
+              "value": "light",
+              "invert": false,
+              "operator": "equals"
+            }
+          ],
           "rulesOperator": "OR",
           "disableTemplating": false,
           "fallbackTo404": false,
@@ -55,7 +71,7 @@
         },
         {
           "uuid": "9518f1a4-3498-46dc-aee4-8165ff2fa3f6",
-          "body": "{\n  \"background-color\": \"#0FCF90\",\n  \"panel-color\": \"#A84441\",\n  \"border-color\": \"#3f4054\",\n  \"font-color\": \"#ffffff\",\n  \"primary-color\": \"#2b2c3b\",\n  \"primary-hover-color\": \"#585efb\",\n  \"accent-color\": \"#0fcf90\",\n  \"error-color\": \"#af1a1a\",\n  \"placeholder-text\": \"#767676\",\n  \"disabled-color\": \"#e5e5e5\"\n}",
+          "body": "{\n  \"backgroundColor\": \"#0FCF90\",\n  \"panelColor\": \"#2b2c3b\",\n  \"borderColor\": \"#3f4054\",\n  \"fontColor\": \"#ffffff\",\n  \"primaryColor\": \"#2b2c3b\",\n  \"primaryHoverColor\": \"#585efb\",\n  \"accentColor\": \"#0fcf90\",\n  \"errorColor\": \"#af1a1a\",\n  \"placeholderText\": \"#767676\",\n  \"disabledColor\": \"#e5e5e5\"\n}",
           "latency": 0,
           "statusCode": 200,
           "label": "Crazy Theme",
@@ -64,7 +80,15 @@
           "filePath": "",
           "databucketID": "",
           "sendFileAsBody": false,
-          "rules": [],
+          "rules": [
+            {
+              "target": "query",
+              "modifier": "theme",
+              "value": "crazy",
+              "invert": false,
+              "operator": "equals"
+            }
+          ],
           "rulesOperator": "OR",
           "disableTemplating": false,
           "fallbackTo404": false,

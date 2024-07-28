@@ -1,10 +1,9 @@
-import React from 'react';
 import '@ether/styles';
 
 export function App() {
   return (
     <div>
-      <p>Ether Admin</p>
+      <p>Admin</p>
     </div>
   );
 }

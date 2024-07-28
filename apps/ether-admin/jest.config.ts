@@ -1,4 +1,3 @@
-/* eslint-disable */
 export default {
   displayName: 'ether-admin',
   preset: '../../jest.preset.js',
