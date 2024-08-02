@@ -16,6 +16,7 @@
     "baseUrl": ".",
     "jsx": "react-jsx",
     "paths": {
+      "@ether/ui": ["libs/shared/ui/src/index.ts"],
       "@ether/core": ["libs/shared/core/src/index.ts"],
       "@ether/dynamic-theme": [
         "libs/shared/features/dynamic-theme/src/index.ts"

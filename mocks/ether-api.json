@@ -17,7 +17,7 @@
       "responses": [
         {
           "uuid": "2e028733-fb17-48a5-b8ae-daa5beb136e7",
-          "body": "{\n  \"backgroundColor\": \"#3f4054\",\n  \"panelColor\": \"#2b2c3b\",\n  \"borderColor\": \"#3f4054\",\n  \"fontColor\": \"#ffffff\",\n  \"primaryColor\": \"#2b2c3b\",\n  \"primaryHoverColor\": \"#585efb\",\n  \"accentColor\": \"#0fcf90\",\n  \"errorColor\": \"#af1a1a\",\n  \"placeholderText\": \"#767676\",\n  \"disabledColor\": \"#e5e5e5\"\n}",
+          "body": "{\n  \"backgroundColor\": \"#3f4054\",\n  \"panelColor\": \"#2b2c3b\",\n  \"borderColor\": \"#3f4054\",\n  \"fontColor\": \"#ffffff\",\n  \"primaryColor\": \"#696FFB\",\n  \"primaryHoverColor\": \"#585efb\",\n  \"accentColor\": \"#0fcf90\",\n  \"errorColor\": \"#af1a1a\",\n  \"placeholderText\": \"#767676\",\n  \"disabledColor\": \"#e5e5e5\"\n}",
           "latency": 0,
           "statusCode": 200,
           "label": "Dark Theme",

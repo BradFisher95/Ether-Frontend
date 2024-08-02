@@ -1,3 +1,4 @@
+import { Loader } from '@ether/ui';
 import { useDynamicTheme } from '@ether/dynamic-theme';
 import '@ether/styles';
 
@@ -6,7 +7,7 @@ export function App() {
 
   return (
     <div>
-      <h1>Customer</h1>
+      <Loader></Loader>
     </div>
   );
 }
