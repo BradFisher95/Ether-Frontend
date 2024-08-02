@@ -82,11 +82,16 @@ table {
 
 /* End */
 
+html {
+  background-color: var(--background-color);
+  font-display: swap;
+}
+
 body {
   line-height: 1;
   background-color: var(--background-color);
   color: var(--font-color);
-  font-family: 'Outfit', sans-serif;
+  font-family: 'Outfit', Arial, Helvetica, sans-serif;
   transition: 0.3s;
 
   > * {
