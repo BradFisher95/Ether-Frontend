@@ -3,7 +3,7 @@ import { useDynamicTheme } from '@ether/dynamic-theme';
 import '@ether/styles';
 
 export function App() {
-  useDynamicTheme();
+  useDynamicTheme('dark');
 
   return (
     <div>

@@ -2,8 +2,8 @@ import { useEffect, useState } from 'react';
 import { camelToKebab } from '@ether/core';
 import { Theme, useFetchThemeQuery } from '@ether/data-access';
 
-export function useDynamicTheme() {
-  const [theme, setTheme] = useState('light');
+export function useDynamicTheme(defaultTheme: 'dark' | 'light' = 'dark') {
+  const [theme, setTheme] = useState(defaultTheme);
   const { data, isError, error } = useFetchThemeQuery(theme);
 
   useEffect(() => {
