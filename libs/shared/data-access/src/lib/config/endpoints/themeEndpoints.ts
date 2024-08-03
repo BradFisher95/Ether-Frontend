@@ -4,7 +4,7 @@ import { Theme } from '../types/theme';
 export const themeApi = configApi.injectEndpoints({
   endpoints: (builder) => ({
     fetchTheme: builder.query<Theme, string | void>({
-      query(theme = 'light') {
+      query(theme = 'dark') {
         return `/theme?theme=${theme}`;
       },
     }),

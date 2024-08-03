@@ -93,6 +93,7 @@ body {
   background-color: var(--background-color);
   color: var(--font-color);
   font-family: 'Outfit', Arial, Helvetica, sans-serif;
+  transition: 0.5s; // is this a bad idea?
 
   > * {
     transition: 0.3s;

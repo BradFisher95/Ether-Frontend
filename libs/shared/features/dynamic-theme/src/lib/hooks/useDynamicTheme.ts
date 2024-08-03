@@ -3,14 +3,19 @@ import { camelToKebab } from '@ether/core';
 import { Theme, useFetchThemeQuery } from '@ether/data-access';
 
 export function useDynamicTheme() {
-  const [theme, setTheme] = useState('dark');
-  const { data } = useFetchThemeQuery(theme);
+  const [theme, setTheme] = useState('light');
+  const { data, isError, error } = useFetchThemeQuery(theme);
 
   useEffect(() => {
     if (data) {
       mapToCssVars(data);
     }
   }, [data]);
+
+  if (isError) {
+    console.error('Theme not found, using default theme.');
+    console.error(error);
+  }
 
   const updateTheme = () => {
     setTheme((prevTheme) => (prevTheme === 'dark' ? 'light' : 'dark'));

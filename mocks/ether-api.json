@@ -44,7 +44,7 @@
         },
         {
           "uuid": "96f29fea-1073-4031-87b0-be2d18e0c1c1",
-          "body": "{\n  \"backgroundColor\": \"#EDEEEF\",\n  \"panelColor\": \"#2b2c3b\",\n  \"borderColor\": \"#3f4054\",\n  \"fontColor\": \"#333333\",\n  \"primaryColor\": \"#2b2c3b\",\n  \"primaryHoverColor\": \"#585efb\",\n  \"accentColor\": \"#0fcf90\",\n  \"errorColor\": \"#af1a1a\",\n  \"placeholderText\": \"#767676\",\n  \"disabledColor\": \"#e5e5e5\"\n}",
+          "body": "{\n  \"backgroundColor\": \"#EDEEEF\",\n  \"panelColor\": \"#FFFFFF\",\n  \"borderColor\": \"#3f4054\",\n  \"fontColor\": \"#333333\",\n  \"primaryColor\": \"#2b2c3b\",\n  \"primaryHoverColor\": \"#585efb\",\n  \"accentColor\": \"#0fcf90\",\n  \"errorColor\": \"#af1a1a\",\n  \"placeholderText\": \"#767676\",\n  \"disabledColor\": \"#e5e5e5\"\n}",
           "latency": 0,
           "statusCode": 200,
           "label": "Light Theme",
@@ -107,7 +107,15 @@
           "filePath": "",
           "databucketID": "",
           "sendFileAsBody": false,
-          "rules": [],
+          "rules": [
+            {
+              "target": "query",
+              "modifier": "theme",
+              "value": "error",
+              "invert": false,
+              "operator": "equals"
+            }
+          ],
           "rulesOperator": "OR",
           "disableTemplating": false,
           "fallbackTo404": false,
