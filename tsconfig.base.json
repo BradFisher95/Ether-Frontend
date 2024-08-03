@@ -16,12 +16,13 @@
     "baseUrl": ".",
     "jsx": "react-jsx",
     "paths": {
-      "@ether/ui": ["libs/shared/ui/src/index.ts"],
+      "@ether/data-access": ["libs/shared/data-access/src/index.ts"],
       "@ether/core": ["libs/shared/core/src/index.ts"],
       "@ether/dynamic-theme": [
         "libs/shared/features/dynamic-theme/src/index.ts"
       ],
-      "@ether/styles": ["libs/shared/styles/src/index.ts"]
+      "@ether/styles": ["libs/shared/styles/src/index.ts"],
+      "@ether/ui": ["libs/shared/ui/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

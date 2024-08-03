@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
-import { useFetchThemeQuery, Theme } from '../slices/themeSlice';
 import { camelToKebab } from '@ether/core';
+import { Theme, useFetchThemeQuery } from '@ether/data-access';
 
 export function useDynamicTheme() {
   const [theme, setTheme] = useState('dark');

@@ -1,7 +1,7 @@
 {
   "uuid": "c4d07872-70ca-4c4b-82e8-c366cb01216a",
   "lastMigration": 32,
-  "name": "Ether API",
+  "name": "Ether Configurations",
   "endpointPrefix": "",
   "latency": 0,
   "port": 1000,

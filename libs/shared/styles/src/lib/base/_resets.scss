@@ -84,14 +84,15 @@ table {
 html {
   background-color: var(--background-color);
   font-display: swap;
+  height: 100%;
 }
 
 body {
+  height: 100%;
   line-height: 1;
   background-color: var(--background-color);
   color: var(--font-color);
   font-family: 'Outfit', Arial, Helvetica, sans-serif;
-  transition: 0.3s;
 
   > * {
     transition: 0.3s;

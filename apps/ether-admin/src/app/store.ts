@@ -1,12 +1,12 @@
 import { configureStore } from '@reduxjs/toolkit';
-import { themeAPISlice } from '@ether/dynamic-theme';
+import { configApi } from '@ether/data-access';
 
 export const store = configureStore({
   reducer: {
-    [themeAPISlice.reducerPath]: themeAPISlice.reducer,
+    [configApi.reducerPath]: configApi.reducer,
   },
   middleware: (getDefaultMiddleware) => {
-    return getDefaultMiddleware().concat(themeAPISlice.middleware);
+    return getDefaultMiddleware().concat(configApi.middleware);
   },
 });
 
