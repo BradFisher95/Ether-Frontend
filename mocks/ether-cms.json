@@ -1,0 +1,127 @@
+{
+  "uuid": "835657f3-a8fb-4057-a014-4e17cbc04aa5",
+  "lastMigration": 32,
+  "name": "Ether CMS",
+  "endpointPrefix": "",
+  "latency": 0,
+  "port": 1001,
+  "hostname": "",
+  "folders": [],
+  "routes": [
+    {
+      "uuid": "87ff8d01-5f86-4360-8df5-decb43da3a46",
+      "type": "http",
+      "documentation": "",
+      "method": "get",
+      "endpoint": "content",
+      "responses": [
+        {
+          "uuid": "85ab48f5-1dfc-496d-a93e-39b0c5b34306",
+          "body": "{\n  \"data\": [\n    {\n      \"page_name\": \"page\",\n      \"block_name\": \"empty\",\n      \"content\": \"<p>Please pass a pageName and blockName to the ContentRenderer</p>\"\n    },\n    {\n      \"page_name\": \"init\",\n      \"block_name\": \"loader\",\n      \"content\": \"<h1>customer app loading content</h1>\"\n    }\n  ]\n}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "Customer content",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [
+            {
+              "target": "query",
+              "modifier": "content",
+              "value": "customer",
+              "invert": false,
+              "operator": "equals"
+            }
+          ],
+          "rulesOperator": "OR",
+          "disableTemplating": true,
+          "fallbackTo404": false,
+          "default": true,
+          "crudKey": "id",
+          "callbacks": []
+        },
+        {
+          "uuid": "234972f8-dd4b-4fd7-bd68-879e32ca7d74",
+          "body": "{\n  \"data\": [\n    {\n      \"page_name\": \"page\",\n      \"block_name\": \"empty\",\n      \"content\": \"<p>Please pass a pageName and blockName to the ContentRenderer</p>\"\n    },\n    {\n      \"page_name\": \"init\",\n      \"block_name\": \"loader\",\n      \"content\": \"<p>admin app loading content</p>\"\n    }\n  ]\n}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "Admin content",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [
+            {
+              "target": "query",
+              "modifier": "content",
+              "value": "admin",
+              "invert": false,
+              "operator": "equals"
+            }
+          ],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": false,
+          "crudKey": "id",
+          "callbacks": []
+        }
+      ],
+      "responseMode": null
+    }
+  ],
+  "rootChildren": [
+    {
+      "type": "route",
+      "uuid": "87ff8d01-5f86-4360-8df5-decb43da3a46"
+    }
+  ],
+  "proxyMode": false,
+  "proxyHost": "",
+  "proxyRemovePrefix": false,
+  "tlsOptions": {
+    "enabled": false,
+    "type": "CERT",
+    "pfxPath": "",
+    "certPath": "",
+    "keyPath": "",
+    "caPath": "",
+    "passphrase": ""
+  },
+  "cors": true,
+  "headers": [
+    {
+      "key": "Content-Type",
+      "value": "application/json"
+    },
+    {
+      "key": "Access-Control-Allow-Origin",
+      "value": "*"
+    },
+    {
+      "key": "Access-Control-Allow-Methods",
+      "value": "GET,POST,PUT,PATCH,DELETE,HEAD,OPTIONS"
+    },
+    {
+      "key": "Access-Control-Allow-Headers",
+      "value": "Content-Type, Origin, Accept, Authorization, Content-Length, X-Requested-With"
+    }
+  ],
+  "proxyReqHeaders": [
+    {
+      "key": "",
+      "value": ""
+    }
+  ],
+  "proxyResHeaders": [
+    {
+      "key": "",
+      "value": ""
+    }
+  ],
+  "data": [],
+  "callbacks": []
+}

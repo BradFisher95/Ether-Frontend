@@ -1,9 +1,14 @@
+import { ContentRenderer } from '@ether/cms';
 import './Loader.scss';
-export function Loader() {
+
+export const Loader = ({ pageName = 'init', blockName = 'loader' }) => {
   return (
     <div className="loader-container">
       <div className="loader"></div>
-      <p>Entering the clear sky</p>
+      <ContentRenderer
+        pageName={pageName}
+        blockName={blockName}
+      ></ContentRenderer>
     </div>
   );
-}
+};

@@ -1,12 +1,16 @@
 import { configureStore } from '@reduxjs/toolkit';
-import { configApi } from '@ether/data-access';
+import { cmsApi, configApi } from '@ether/data-access';
 
 export const store = configureStore({
   reducer: {
     [configApi.reducerPath]: configApi.reducer,
+    [cmsApi.reducerPath]: cmsApi.reducer,
   },
   middleware: (getDefaultMiddleware) => {
-    return getDefaultMiddleware().concat(configApi.middleware);
+    return getDefaultMiddleware().concat(
+      configApi.middleware,
+      cmsApi.middleware
+    );
   },
 });
 

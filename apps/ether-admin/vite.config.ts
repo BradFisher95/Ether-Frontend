@@ -20,6 +20,8 @@ export default defineConfig({
     host: 'localhost',
   },
 
+  envDir: './environment',
+
   plugins: [react(), nxViteTsPaths()],
 
   // Uncomment this if you are using workers.

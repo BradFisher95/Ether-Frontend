@@ -2,9 +2,11 @@ import { useEffect, useState } from 'react';
 import { camelToKebab } from '@ether/core';
 import { Theme, useFetchThemeQuery } from '@ether/data-access';
 
-export function useDynamicTheme(defaultTheme: 'dark' | 'light' = 'dark') {
+export function useDynamicTheme() {
+  const defaultTheme = import.meta.env.VITE_DEFAULT_THEME;
+
   const [theme, setTheme] = useState(defaultTheme);
-  const { data, isError, error } = useFetchThemeQuery(theme);
+  const { data, isError, error } = useFetchThemeQuery(defaultTheme);
 
   useEffect(() => {
     if (data) {
