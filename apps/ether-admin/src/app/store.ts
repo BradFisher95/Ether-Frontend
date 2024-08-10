@@ -1,8 +1,10 @@
 import { configureStore } from '@reduxjs/toolkit';
 import { cmsApi, configApi } from '@ether/data-access';
+import { authReducer } from '@ether/auth';
 
 export const store = configureStore({
   reducer: {
+    auth: authReducer,
     [configApi.reducerPath]: configApi.reducer,
     [cmsApi.reducerPath]: cmsApi.reducer,
   },
