@@ -16,6 +16,7 @@
     "baseUrl": ".",
     "jsx": "react-jsx",
     "paths": {
+      "@ether-frontend/auth": ["libs/shared/features/auth/src/index.ts"],
       "@ether/cms": ["libs/shared/features/cms/src/index.ts"],
       "@ether/core": ["libs/shared/core/src/index.ts"],
       "@ether/data-access": ["libs/shared/data-access/src/index.ts"],

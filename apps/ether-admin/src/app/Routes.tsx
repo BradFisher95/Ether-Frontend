@@ -2,15 +2,18 @@ import { createBrowserRouter, Navigate } from 'react-router-dom';
 import Login from './pages/login/Login';
 import Dashboard from './pages/dashboard/Dashboard';
 import NotFound from './pages/not-found/NotFound';
+import { ProtectedRoute } from '@ether/core';
 
 export const AppRoutes = {
+  ROOT: '/',
   LOGIN: '/login',
   DASHBOARD: '/dashboard',
+  NOT_FOUND: '*',
 };
 
 export const AppRouter = createBrowserRouter([
   {
-    path: '/',
+    path: AppRoutes.ROOT,
     element: <Navigate to={AppRoutes.LOGIN} />,
   },
   {
@@ -19,10 +22,10 @@ export const AppRouter = createBrowserRouter([
   },
   {
     path: AppRoutes.DASHBOARD,
-    element: <Dashboard />,
+    element: <ProtectedRoute element={<Dashboard />} />,
   },
   {
-    path: '*',
+    path: AppRoutes.NOT_FOUND,
     element: <NotFound />,
   },
 ]);
